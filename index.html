@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- </div> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()">
+    <audio id="myAudio">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <div class="setting">
+        <div >
+            <h1>Set Timer</h1>
+            <input id="time" type="time" name="time">
+            <br>
+            <button id="submit" onclick="show()" class="submit">Start</button>
+        </div>    
+        <div id="screen"></div>
+       
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
