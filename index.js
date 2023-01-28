@@ -8,6 +8,7 @@ function show(){
   document.getElementById('submit').style.cssText = 'background-color: red; color: white; font-size: 35px';
   document.getElementById('invalid').style.cssText = 'visibility: hidden'
   document.getElementById("submit").disabled = true;
+  document.getElementById("submit").innerHTML="Started!"
   countdown()
 }
 
