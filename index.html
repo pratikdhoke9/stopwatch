@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- </div> -->
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,32 @@
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="load()">
+<body >
     <audio id="myAudio">
         <source src="audio.mp3" type="audio/mpeg">
     </audio>
+
     <div class="setting">
-        <div >
-            <h1>Set Timer</h1>
-            <input id="time" type="time" name="time">
-            <br>
-            <button id="submit" onclick="show()" class="submit">Start</button>
-        </div>    
+        <h1>Set Timer</h1>
+
+        <table id="table">
+            <tr>
+                <td> <input type="number" class="time_input" id="hour"></td>
+                <td> <input type="number" class="time_input" id="minute"></td>
+                <td> <input type="number" class="time_input" id="second"></td>
+            </tr>
+
+            <tr class="label">
+                <td>Hour</td>
+                <td>Minute</td>
+                <td>Second</td>
+            </tr>
+        </table>
+
+        <div id="invalid" >Invalid input!</div>
+        
+        <button id="submit" onclick="show()" class="submit">Start</button>
+        
         <div id="screen"></div>
        
     </div>
